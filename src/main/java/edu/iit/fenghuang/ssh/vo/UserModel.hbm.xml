@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="edu.iit.fenghuang.ssh.vo.UserModel" table="user_tbl">
+        <id name="userId" column="user_id">
+            <generator class="assigned" />
+        </id>
+        <property name="password" column="password">
+        </property>
+        <property name="firstName" column="first_name">
+        </property>
+        <property name="LastName" column="last_name">
+        </property>
+        <property name="balance" column="balance">
+        </property>
+        <property name="email" column="email">
+        </property>
+    </class>
+</hibernate-mapping>

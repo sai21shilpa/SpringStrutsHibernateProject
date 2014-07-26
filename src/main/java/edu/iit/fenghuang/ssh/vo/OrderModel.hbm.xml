@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="edu.iit.fenghuang.ssh.vo.OrderModel" table="order_tbl">
+        <id name="orderId" column="order_id">
+            <generator class="assigned" />
+        </id>
+        <property name="userId" column="user_id">
+        </property>
+        <property name="goodId" column="good_id">
+        </property>
+        <property name="unitPrice" column="unit_price">
+        </property>
+        <property name="number" column="number">
+        </property>
+    </class>
+</hibernate-mapping>

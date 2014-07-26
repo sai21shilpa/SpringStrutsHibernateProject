@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	$().ready(function() {
+		$("#div1").css("color", "yellow").click(function() {
+			alert("hi");
+		});
+		$("#tab1 tr:odd").css("background", "red");
+		$("#tab1 tr:even").css("background", "yellow");
+		//实现全选：
+		$("#checkAll").click(function(){
+			alert(this.checked);
+			$("input[name='hobbies']").attr("checked",this.checked);
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="div1">div1</div>
+	<table id="tab1" border="1">
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+
+	</table>
+	<input type="checkbox" id="checkAll"> 全选
+	<hr>
+	<input type="checkbox" name="hobbies" value="sleep">sleep
+	<br>
+	<input type="checkbox" name="hobbies" value="sport">sport
+	<br>
+	<input type="checkbox" name="hobbies" value="read">read
+	<br>
+
+</body>
+</html>
